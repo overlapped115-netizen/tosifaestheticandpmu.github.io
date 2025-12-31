@@ -177,9 +177,7 @@
   <div class="container">
     <h2 class="fw-bold text-center gold mb-4">Book Your Appointment</h2>
 
-    <form id="appointmentForm" class="row g-3"
-      action="https://script.google.com/macros/s/AKfycbxjZHmveLAzHD-CrBwgWwwbBsIUPblqTyWD-txlvsMEuOLBGDPaQ6x3zxTb4U0JleJQuQ/exec"
-      method="POST">
+     <form id="appointmentForm" class="row g-3">
 
       <div class="col-md-6">
         <input name="fullName" type="text" class="form-control" placeholder="Full Name" required>
@@ -202,14 +200,17 @@
       </div>
     </form>
 
-    <!-- Inline Success Message -->
     <div id="successMessage" class="mt-3 text-center alert alert-success d-none">
       ✅ Your appointment has been booked successfully!
     </div>
   </div>
 </section>
 
-<!-- AJAX Script -->
+
+
+<!-- ============================
+      AJAX to Google Sheet
+============================ -->
 <script>
 document.getElementById("appointmentForm").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -221,15 +222,20 @@ document.getElementById("appointmentForm").addEventListener("submit", function(e
         message: e.target.message.value
     };
 
-    fetch("YOUR_GOOGLE_SCRIPT_URL_HERE", {
+    fetch("https://script.google.com/macros/s/AKfycbxjZHmveLAzHD-CrBwgWwwbBsIUPblqTyWD-txlvsMEuOLBGDPaQ6x3zxTb4U0JleJQuQ/exec", {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
-    }).then(() => {
-        alert("Appointment Booked Successfully!");
+    })
+    .then(() => {
+        document.getElementById("successMessage").classList.remove("d-none");
         e.target.reset();
-    });
+        setTimeout(() => {
+          document.getElementById("successMessage").classList.add("d-none");
+        }, 5000);
+    })
+    .catch(err => alert("Error: " + err));
 });
 </script>
 
@@ -242,6 +248,7 @@ document.getElementById("appointmentForm").addEventListener("submit", function(e
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
 
