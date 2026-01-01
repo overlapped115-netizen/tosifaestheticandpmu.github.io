@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tosif Aesthetic & PMU Clinic</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', 'Segoe UI', sans-serif; background: #f8f5f0; color: #333; }
+    .gold { color: #d4af37; }
+    .bg-gold { background: #d4af37; }
+    .btn-gold { background: #d4af37; color: #111; font-weight: 600; padding: .9rem 1.25rem; font-size: 1.05rem; border-radius: 10px; }
+    .btn-gold:hover { background: #b8972f; color: #fff; }
+    .btn-success { padding: .86rem 1.2rem; font-size: 1.03rem; border-radius: 10px; }
+
+    /* Navbar */
+    .navbar { background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .navbar-brand { font-weight: 700; color: #d4af37 !important; }
+    .navbar-nav .nav-link { color: #333; font-weight: 500; }
+    .navbar-nav .nav-link:hover { color: #d4af37; }
+    .navbar-toggler { border: none; }
+    .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+    /* 🔥 YOUR LOGO/IMAGE AS HERO BACKGROUND */
+    header {
+      background: url('https://t4.ftcdn.net/jpg/06/34/83/33/360_F_634833308_kfLFGbGvcD5323kqcF5jp6NrPwTiYle5.jpg') center/cover no-repeat;
+      height: 95vh;
+      position: relative;
+    }
+
+    header .overlay {
+      position: absolute; inset: 0;
+      display: flex; justify-content: center; align-items: center;
+      color: #fff; text-align: center; padding: 20px;
+    }
+
+    /* Larger, elegant heading */
+      header .overlay h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2.8rem, 6vw, 5rem);
+        line-height: 1.02;
+        margin-bottom: .4rem;
+        color: #ffd54a;
+        text-shadow: 0 10px 30px rgba(0,0,0,0.55);
+        letter-spacing: .6px;
+      }
+
+    header .overlay p.lead {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1rem, 2.2vw, 1.45rem);
+      color: #000;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      text-shadow: none;
+    }
+
+    .service-card, .product-card {
+      border: none; border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: .3s;
+    }
+    .service-card:hover, .product-card:hover { transform: translateY(-5px); } 
+    footer { background: #111; color: #fff; padding: 20px 0; position: relative; }
+    .social-media a { color: #fff; margin: 0 10px; font-size: 1.5rem; transition: color 0.3s; }
+    .social-media a:hover { color: #d4af37; }
+    .footer-copyright { font-size: 0.6rem; }
+    .footer-logo { position: absolute; bottom: 10px; right: 20px; height: 40px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="symbol.png" alt="Tosif Clinic" height="60"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/glam_by_tosifarman?igsh=MXFseWUwbHduaHkyNw==" target="_blank">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO HEADER -->
+  <header id="home">
+    <div class="overlay container">
+      <div>
+        <h1 class="display-4 fw-bold gold">Tosif Aesthetic & PMU Clinic</h1>
+        <p class="lead">Enhance your natural beauty with our touch of artistry</p>
+        <a href="#appointment" class="btn btn-gold btn-lg m-2">Book Appointment</a>
+        <a href="https://wa.me/918539956077" class="btn btn-success btn-lg m-2">WhatsApp Now</a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- ABOUT SECTION -->
+     <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="fw-bold text-center gold mb-4">✨ Why Choose Tosif Aesthetic & PMU Clinic?</h2>
+
+<div class="reason-box"><strong>Where art meets precision</strong> — we enhance your beauty, not change it.</div>
+<div class="reason-box"><strong>Trusted hands</strong>. Natural results. Confidence that lasts.</div>
+<div class="reason-box"><strong>Personalized treatments</strong> designed to match your unique features and style.</div>
+<div class="reason-box"><strong>Perfect blend of aesthetics & safety</strong> using advanced techniques.</div>
+<div class="reason-box"><strong>that feels effortles</strong> results that look naturally yours.</div>
+<div class="reason-box"><strong>Timeless beauty</strong> — we don’t follow trends, we create them for you.</div>
+<div class="reason-box"><strong>Skilled expertise</strong>, premium pigments, and meticulous care in every stroke.</div>
+
+<div class="reason-box"><strong>You deserve confidence</strong> — results that make you feel it every single day.</div>
+<div class="reason-box"><strong>Your comfort, your confidence, your beauty</strong> — our priority.</div>
+<div class="reason-box"><strong>consultation to aftercare</strong>, we’re with you every step of your glow-up journey.</div>
+
+    </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center gold mb-4">Our Signature Treatments</h2>
+      <div class="row g-4">
+        <a href="services/acne.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Acne</div></a>
+        <a href="services/acne-scars.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Acne Scars / Marks</div></a>
+        <a href="services/open-pores.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Open Pores Treatment</div></a>
+        <a href="services/mole-wart.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Mole / Wart Removal</div></a>
+        <a href="services/dark-lips.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Dark Lips Lightening</div></a>
+        <a href="services/glow-facial.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Dull Skin Glow Facial</div></a>
+        <a href="services/eyebrow-pmu.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Eyebrow PMU</div></a>
+        <a href="services/earlobe-repair.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Earlobe Repair</div></a>
+        <a href="services/hyperpigmentation.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Hyperpigmentation/melasma Treatment</div></a>
+        <a href="services/dark-circles.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Dark Circle Reduction</div></a>
+        <a href="services/underarms-lightening.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Dark Underarms Lightening</div></a>
+        <a href="services/skin-rejuvenation.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Skin Rejuvenation</div></a>
+        <a href="services/uneven-tone.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Uneven Skin Tone Treatment</div></a>
+        <a href="services/hydra-facial.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Hydra Facial</div></a>
+        <a href="services/carbon-facial.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Carbon Facial with Laser</div></a>
+        <a href="services/laser-hair.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Laser Hair Reduction</div></a>
+        <a href="services/bb-glow.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">BB Glow Treatment</div></a>
+        <a href="services/korean-glass.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Korean glass Treatment</div></a>
+        <a href="services/antiaging.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">Antiaging Treatment</div></a>
+        <a href="services/prp-gfc.html" class="col-md-3 text-decoration-none"><div class="card service-card p-3 text-center">PRP/GFC</div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center gold mb-4">Treatment Plans & Pricing</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="p-4 border rounded">
+            <h4 class="fw-bold">Dark lip correction</h4>
+            <p class="gold display-6">Starting from ₹4999</p>
+            <button class="btn btn-gold">Book Now</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded">
+            <h4 class="fw-bold">Laser Facial</h4>
+            <p class="gold display-6">Starting from ₹3499</p>
+            <button class="btn btn-gold">Book Now</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded">
+            <h4 class="fw-bold">Laser Hair Reduction</h4>
+            <p class="gold display-6">Starting from ₹999</p>
+            <button class="btn btn-gold">Book Now</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+         <div class="p-4 border rounded">
+            <h4 class="fw-bold">Acne Treatment</h4>
+            <p class="gold display-6">Starting from ₹1499</p>
+            <button class="btn btn-gold">Book Now</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+         <div class="p-4 border rounded">
+            <h4 class="fw-bold">mole/wart Removal</h4>
+            <p class="gold display-6">Starting from ₹1999</p>
+            <button class="btn btn-gold">Book Now</button>
+              </div>
+        </div>
+        <div class="col-md-4">
+         <div class="p-4 border rounded">
+            <h4 class="fw-bold">BB glow Treatment</h4>
+            <p class="gold display-6">Starting from ₹8499</p>
+            <button class="btn btn-gold">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center gold mb-4">Skin Care Products</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-3"><div class="card product-card p-3">Acne Face Wash</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Lightening Face Wash</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Brightening Face wash</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Hydrating Face Wash</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Clear skin Toner</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Hydra Q Moisturizing Lotion</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">All Skin Type Sunscream</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Vitamin C Serum</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Brightening Serum</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Retinol Serum</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Eye revive Serum</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Clear Skin Serum</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Rejuvlight Cream</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Lightening Cream</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Antiaging Cream</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">Melano Cream</div></div>
+        <div class="col-md-3"><div class="card product-card p-3">lip balm</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT FORM -->
+<section id="appointment" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center gold mb-4">Book Your Appointment</h2>
+    
+<form id="appointmentForm" class="row g-3">
+
+      <div class="col-md-6">
+        <input name="fullName" type="text" class="form-control" placeholder="Full Name" required>
+      </div>
+
+      <div class="col-md-6">
+        <input name="phoneNumber" type="tel" class="form-control" placeholder="Phone Number" required>
+      </div>
+
+      <div class="col-12">
+        <input name="treatment" type="text" class="form-control" placeholder="Treatment Interested In">
+      </div>
+
+      <div class="col-12">
+        <textarea name="message" class="form-control" placeholder="Message" rows="3"></textarea>
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-gold btn-lg">Submit</button>
+      </div>
+    </form>
+
+    <div id="successMessage" class="mt-3 text-center alert alert-success d-none">
+      ✅ Your appointment has been booked successfully!
+                Our team will contact you soon.
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ============================
+      AJAX to Google Sheet
+============================ -->
+<script>
+document.getElementById("appointmentForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    const formData = {
+        fullName: e.target.fullName.value,
+        phoneNumber: e.target.phoneNumber.value,
+        treatment: e.target.treatment.value,
+        message: e.target.message.value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbxjZHmveLAzHD-CrBwgWwwbBsIUPblqTyWD-txlvsMEuOLBGDPaQ6x3zxTb4U0JleJQuQ/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+    })
+    .then(() => {
+        document.getElementById("successMessage").classList.remove("d-none");
+        e.target.reset();
+        setTimeout(() => {
+          document.getElementById("successMessage").classList.add("d-none");
+        }, 5000);
+    })
+    .catch(err => alert("Error: " + err));
+});
+</script>
+
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <div class="social-media">
+       <p>Contact Us</p>
+       <section id="contact"></section>
+      <a href="https://www.instagram.com/glam_by_tosifarman?igsh=MXFseWUwbHduaHkyNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/918539956077" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/share/1DacRK9GRx/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <p class="footer-copyright">© 2024 Tosif Aesthetic & PMU Clinic | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
